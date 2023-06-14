@@ -1,0 +1,136 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--neutral-color2);
+  }
+  body .container{
+    background: var(--neutral-color2);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80rem;
+    height: 49rem;
+  }
+  header{
+    margin: 50px 70px 0 70px;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img{
+    width: 9.3rem;
+  }
+  .close-icon img{
+    width: 1.5rem;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .verf-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    width: 22.938rem;
+    height: 17.625rem;
+    left: calc(50% - 367px/2 + 0.5px);
+    top: calc(50% - 282px/2);
+  }
+  main h3{
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 3.75rem;
+      display: flex;
+      align-items: center;
+      text-align: center;
+  }
+  main p{
+      font-size: 1.125rem;
+      font-weight: 400;   
+      line-height: 1.688rem;
+      text-align: center; 
+      color: var(--gray1);
+      order: 2;
+  }
+  main p span{
+      color: var(--primary-color);
+  }
+  main button{
+      background-color: var(--primary-color);
+      color: var(--neutral-color2);
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 32px;
+      width: 22.94rem;
+      height: 2.625rem;
+      border: none;
+      border-radius: 0.5rem;
+      flex: none;
+      order: 3;
+      flex-grow: 0;
+  }
+  footer p{
+      position: absolute;
+      left: calc(50% - 219px/2);
+      top: 45.1rem;
+      color: var(--gray1);
+  }
+  footer p span{
+      color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    header,
+    footer {
+      display: none;
+    }
+  
+    main .verf-container {
+      width: 18.75rem;
+      height: 15.125rem;
+      left: calc(50% - 300px/2);
+      top: calc(50% - 242px/2 - 0.5px);
+    }
+  
+    .verf-container img {
+      width: 9rem;
+    }
+  
+    main h3 {
+      line-height: 1.75rem;
+      font-size: 1.5rem;
+    }
+  
+    main p,
+    main button{
+      font-size: .875rem;
+    }
+    main p{
+      width: 18.75rem;
+      height: 2.875rem;
+      line-height: 1.25rem;
+    }
+    main button{
+      width: 18.75rem;
+      height: 2.625rem;
+    }
+    main p span{
+      color: var(--gray1);
+    }
+  }
